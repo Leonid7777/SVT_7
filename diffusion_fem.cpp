@@ -26,7 +26,7 @@ double C(double x, double y)
 
 double source(double x, double y)
 {
-    return sin(a*x) * sin(a*y);
+    return a*a * ((dx+dy) * sin(a*x)*sin(a*y) - 2.*dxy * cos(a*x)*cos(a*y));
 }
 
 // Class including everything needed
